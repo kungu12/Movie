@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <nav id="sidebar">
+        <div class="logo">
+            <h1>MovieZone</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#genres"><i class="fas fa-film"></i> Genres</a></li>
+            <li><a href="#top-movies"><i class="fas fa-star"></i> Top Movies</a></li>
+            <li><a href="#subscribe"><i class="fas fa-envelope"></i> Subscribe</a></li>
+        </ul>
+    </nav>
+
+    <div id="hamburger" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <header class="header">
+            <div class="content">
+                <h1>Discover Movies</h1>
+                <p>Explore the latest and top-rated movies tailored for you.</p>
+            </div>
+        </header>
+
+        <section id="genres" class="genres">
+            <h2 class="explore">Explore by Genres</h2>
+            <div class="genres-pics">
+                <div class="card" data-genre="action">
+                    <a href="https://www.youtube.com/results?search_query=action+movies"><img src="pics/action.jpeg" alt=""></a>
+                    <p>Action Movie</p>
+                </div>
+                <div class="card" data-genre="comedy">
+                    <a href="https://www.youtube.com/results?search_query=comedy+movies"><img src="pics/comedy.jpeg" alt=""></a>
+                    <p>Comedy Movie</p>
+                </div>
+                <div class="card" data-genre="drama">
+                    <a href="https://www.youtube.com/results?search_query=drama+movies"><img src="pics/drama.jpeg" alt=""></a>
+                    <p>Drama Movie</p>
+                </div>
+                <div class="card" data-genre="drama">
+                    <a href="https://www.youtube.com/results?search_query=kids+movies"><img src="pics/kids.jpeg" alt=""></a>
+                    <p>Kids Movie</p>
+                </div>
+                <div class="card" data-genre="drama">
+                    <a href="https://www.youtube.com/results?search_query=family+movies"><img src="pics/family.jpeg" alt=""></a>
+                    <p>Family Movie</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="top-movies" class="top-movies">
+            <h2>Top Movies</h2>
+            <div class="movies-list" id="movies-list">
+                <div class="movie-card">
+                    <a href="https://youtu.be/6aHx0P1k7hI?si=--LlNu9LFbtSu889"><img src="./pics/talk-to-me.jpeg" alt=""></a>
+                    <p>Hindi</p>
+                    <div class="movie-details">
+                        <span><i class="fas fa-star"></i> 8.5</span>
+                        <span><i class="fas fa-film"></i> Hindi</span>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <a href="https://youtu.be/PGo4wfCejsk?si=uMwEs1Q6JBuL1fPS"><img src="./pics/talk-to-me.jpeg" alt=""></a>
+                    <p>Talk to me</p>
+                    <div class="movie-details">
+                        <span><i class="fas fa-star"></i> 8.5</span>
+                        <span><i class="fas fa-film"></i> Horror</span>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <a href="https://youtu.be/ss2KvK-w6w8?si=_dNxYnpKsLYj4jxL"><img src="./pics/if.jpeg" alt=""></a>
+                    <p>If</p>
+                    <div class="movie-details">
+                        <span><i class="fas fa-star"></i> 8.5</span>
+                        <span><i class="fas fa-film"></i> Kids</span>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <a href="https://youtu.be/7-6_Ulo7mdk?si=-ZiWFt4098SqXV-N"><img src="./pics/plane.jpeg" alt=""></a>
+                    <p>Plane</p>
+                    <div class="movie-details">
+                        <span><i class="fas fa-star"></i> 8.5</span>
+                        <span><i class="fas fa-film"></i> Plane</span>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <a href="https://youtu.be/tQ0mzXRk-oM?si=2Md0WGBWER_l2Kt5"><img src="./pics/war.jpeg" alt=""></a>
+                    <p>War</p>
+                    <div class="movie-details">
+                        <span><i class="fas fa-star"></i> 8.5</span>
+                        <span><i class="fas fa-film"></i> Action</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="other-movies" id="other-movies">
+            <h2 id="important-h2">Other Movies</h2>
+            <div class="movies-list" id="other-movies-container">
+                <div class="movie-card">
+                    <a href="https://youtu.be/6ZfuNTqbHE8?si=Iu8EOwyNaPuxYxv_"><img src="./pics/2.jpg" alt=""></a>
+                    <p>Avengers</p>
+                </div>
+                <div class="movie-card">
+                    <a href="https://youtu.be/0ZyFW1O8XL8?si=_1nPfDwrfJvCMv7P"><img src="./pics/images (1).jpeg" alt=""></a>
+                    <p>Young Woman</p>
+                </div>
+                <div class="movie-card">
+                    <a href="https://youtu.be/B0GuHb7osFU?si=jXW_kgV_gQubnJJm"><img src="./pics/images (2).jpeg" alt=""></a>
+                    <p>Movie</p>
+                </div>
+                <div class="movie-card">
+                    <a href="https://youtu.be/IVWJm-biTOA?si=5G77_8bj0RslnH3o"><img src="./pics/7.jpg" alt=""></a>
+                    <p>Is Smart</p>
+                </div>
+                <div class="movie-card">
+                    <a href="https://youtu.be/aurvcKtYp_8?si=tn3Wmc0kysIaiuSR"><img src="./pics/8.jpg" alt=""></a>
+                    <p>Joker</p>
+                </div>
+                <div class="movie-card">
+                    <a href="https://youtu.be/RRSQJ9Rf1dQ?si=dD1MPCx7VObMF0OC"><img src="./pics/9.jpg" alt=""></a>
+                    <p>Kick</p>
+                </div>
+                <div class="movie-card">
+                    <a href="https://youtu.be/RiRiTEhiyP4?si=rLWInHM7UNHHL0jj"><img src="./pics/10.jpg" alt=""></a>
+                    <p>Live Die</p>
+                </div>
+                <div class="movie-card">
+                    <a href="https://youtu.be/ggXt-M6WEyQ?si=vjog7bYQSt3Yz7EY"><img src="./pics/11.jpg" alt=""></a>
+                    <p>Monsters</p>
+                </div>
+                <div class="movie-card">
+                    <a href="https://youtu.be/sBU8ejvW6fM?si=u9dhlAUDwHunjo1Z"><img src="./pics/16.jpg" alt=""></a>
+                    <p>The Wife</p>
+                </div>
+                <div class="movie-card">
+                    <a href="https://youtu.be/Nzn6Tw68V_c?si=IPgF4bvhLg7WMrUx"><img src="./pics/17.jpg" alt=""></a>
+                    <p>The Woman</p>
+                </div>
+                <div class="movie-card">
+                    <a href="https://youtu.be/rDmS3ETU9pw?si=g155R1kvdcFv2JL1"><img src="./pics/18.jpg" alt=""></a>
+                    <p>Unfortunate</p>
+                </div>
+                <div class="movie-card">
+                    <a href="https://youtu.be/3pZUQmZdOi4?si=ljEMacT4qRF-BqeX"><img src="./pics/19.jpg" alt=""></a>
+                    <p>Wensday</p>
+                </div>
+                <div class="movie-card">
+                    <a href="https://youtu.be/qCLbAMD1fjM?si=15iznbaBVLcmFjak"><img src="./pics/download (1).jpeg" alt=""></a>
+                    <p>Wonker</p>
+                </div>
+                <div class="movie-card">
+                    <a href="https://youtu.be/gDNu4doKauI?si=IuuAMHIJmmJasWOm"><img src="./pics/download (2).jpeg" alt=""></a>
+                    <p>Dead Pool</p>
+                </div>
+                <div class="movie-card">
+                    <a href="https://youtu.be/O9i2vmFhSSY?si=wJFmI0YvN3BNomCV"><img src="./pics/download.jpeg" alt=""></a>
+                    <p>Movies</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="subscribe" class="subscribe">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to get updates on the latest movies</p>
+            <input type="email" id="email" placeholder="Enter your email">
+            <button>Subscribe</button><br><br>
+            <p>&copy; 2024 Group 1 Wknd Miu</p>
+        </section>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+
+    </script>
+</body>
+</html>
